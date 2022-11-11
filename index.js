@@ -153,6 +153,13 @@ function rateSorter() {
 function crossOffArticle() {
   // when mark visited is clicked, strike through text
   // used later to toggle button
+
+  // so to solve the new park problem. I need to select main, add a event listener to that. And if the event listenr.targer.nodeParent (idk the name) === "BUTTON"
+  // I THENNN have to add an if statement, if that event.target id (or something like that) === "toggle-visited"
+  // and then it is the normal stuff I have below my event Listerner I think
+  // maybe not. if i click a button, i get the innerHTML of the row it is in. and if i do without parentnode. I have a problem where if I click on main white space in main, i get the entirety of main (and if i do a basic .includes"toggle-visited) the entirety of main will
+
+
   let allVisitButtons = document.querySelectorAll(".toggle-visited");
   // now need to add event listener for each button
   allVisitButtons.forEach((currentBtn) => {
